@@ -1,0 +1,271 @@
+.button-box {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn--1 {
+  text-decoration: none;
+  color: #272727;
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid #272727;
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+#btn--1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff200;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  transition: transform 1s;
+}
+
+#btn--1:hover:before {
+  transform: rotate(0deg);
+}
+
+#btn--2 {
+  text-decoration: none;
+  color: #272727;
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid #272727;
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+#btn--2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff200;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom right;
+  transform: rotate(90deg);
+  transition: transform 1s;
+}
+
+#btn--2:hover:before {
+  transform: rotate(0deg);
+}
+
+#btn--3 {
+  text-decoration: none;
+  color: #351435;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #351435;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+#btn--3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+#btn--3:hover:before {
+  transform: translateX(0);
+
+}
+
+#btn--3:hover {
+  color: white;
+}
+
+#btn--4 {
+  text-decoration: none;
+  color: #351435;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #351435;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+#btn--4:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+#btn--4:hover:before {
+  transform: translate(0);
+
+}
+
+#btn--4:hover {
+  color: white;
+}
+
+#btn--5 {
+  padding: 40px 80px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #262626;
+  font-size: 45px;
+  letter-spacing: 2px;
+  border: 5px solid #262626;
+  position: relative;
+  transition: 1s;
+}
+
+#btn--5:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 2s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+
+#btn--5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 2s;
+  transform: rotateY(90deg);
+  z-index: -1;
+}
+
+#btn--5:hover:before {
+  transform: rotateX(0deg);
+}
+
+#btn--5:hover:after {
+  transform: rotateX(0deg);
+}
+
+#btn--5:hover {
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#btn--6 {
+  text-decoration: none;
+  padding: 40px 80px;
+  color: #E1332D;
+  border: 3px solid #E1332D;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: -2px;
+  transition: all .5s;
+}
+
+#btn--6:hover {
+  font-weight: 900;
+  letter-spacing: 10px;
+  border: 3px solid #E1332D;
+}
+
+.button-box--7 {
+  background: #222;
+}
+
+#btn--7 {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid white;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+#btn--7:before {
+  content: "YEAH";
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #F44336;
+  transform: translateY(-100%);
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn--7:hover:before {
+  transform: translate(0);
+
+}
+
+#btn--7:hover {
+  color: white;
+}
+
+#btn--8 {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid white;
+  padding: 40px 80px;
+  transition: all .3s;
+  position: relative;
+}
+
+#btn--8:hover {
+  background-color: #F44336;
+
+}
+
+#btn--8:before {
+  content: "";
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: translateX(-100%);
+}
