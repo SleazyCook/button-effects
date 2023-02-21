@@ -1,8 +1,14 @@
+.buttons {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .button-box {
   height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: content-box;
 }
 
 #btn--1 {
@@ -327,3 +333,50 @@
 #btn--9:hover:after {
   transform: translate(0)
 }
+
+#btn--10 {
+  text-decoration: none;
+  color: #262626;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #262626;
+  padding: 40px 80px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+#btn--10:before {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #262626;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#btn--10:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* #btn--11 {
+  text-decoration: none;
+  color: #262626; 
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #262626;
+  padding: 40px 80px;
+  transition: all 0.5s;
+  position: relative;
+} */
+
