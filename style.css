@@ -1057,6 +1057,7 @@ footer {
   transition: all 0.2s;
   overflow: hidden;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 #btn--22 span {
@@ -1104,6 +1105,7 @@ footer {
   font-size: 28px;
   color: white;
   z-index: 0;
+  cursor: pointer;
 }
 
 #btn--23:before {
@@ -1154,6 +1156,7 @@ footer {
   border-radius: 100px;
   font-size: 24px;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 #btn--24:before {
@@ -1167,6 +1170,7 @@ footer {
   border-radius: 100px;
   transition: all 0.4s;
   z-index: -1;
+
 }
 
 #btn--24:hover:before {
@@ -1182,4 +1186,69 @@ footer {
 #btn--24:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+#btn--25 {
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /*  */
+  text-decoration: none;
+  position: relative;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #250e74;
+  border: 4px solid #250e74;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+}
+
+#btn--25:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid #250e74;
+  border-bottom: 40px solid #250e74;
+  border-right: 40px solid transparent;
+  transition: all 0.5s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+#btn--25:hover:before {
+  transform: translateX(0%);
+}
+
+#btn--25:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid #250e74;
+  border-bottom: 40px solid #250e74;
+  border-left: 40px solid transparent;
+  transition: all 0.5s;
+  z-index: -1;
+  transform: translateX(100%);
+}
+
+#btn--25:hover:after {
+  transform: translateX(0%);
+}
+
+#btn--25:hover {
+  color: white;
 }
