@@ -21,12 +21,13 @@ footer {
   font-size: 1rem;
 }
 
+/* "body" in class */
 .button-box {
   height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: content-box;
+  position: relative;
 }
 
 .button-box--dark {
@@ -59,7 +60,7 @@ footer {
   z-index: -1;
   transform-origin: bottom left;
   transform: rotate(-90deg);
-  transition: transform 1s;
+  transition: transform .5s;
 }
 
 #btn--1:hover:before {
@@ -88,7 +89,7 @@ footer {
   z-index: -1;
   transform-origin: bottom right;
   transform: rotate(90deg);
-  transition: transform 1s;
+  transition: transform .5s;
 }
 
 #btn--2:hover:before {
@@ -681,3 +682,75 @@ footer {
   transform: perspective(1000px) rotateX(-75deg);
 }
 
+#btn--16 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: verdana;
+  color: #f6b93b;
+  letter-spacing: 3px;
+  padding: 25px 50px;
+  position: relative;
+  border: 3px solid #f6b93b;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+#btn--16:before,
+#btn--16:after,
+.span-16:before,
+.span-16:after {
+  content: "";
+  position: absolute;
+  width: 25.5%;
+  height: 100%;
+  background-color: #f6b93b;
+  z-index: -1;
+  transition: all 0.2s;
+}
+
+#btn--16:before {
+  top: 100%;
+  left: 0%;
+
+}
+
+#btn--16:hover:before {
+  top: 0;
+  left: 0;
+}
+
+#btn--16:after {
+  top: -100%;
+  left: 25%;
+}
+
+#btn--16:hover:after {
+  top: 0;
+  left: 25%;
+}
+
+.span-16:before {
+  top: 100%;
+  right: 25%;
+}
+
+#btn--16:hover .span-16:before {
+  top: 0;
+  right: 25%;
+}
+
+.span-16:after {
+  top: -100%;
+  right: 0;
+}
+
+#btn--16:hover .span-16:after {
+  top: 0;
+  right: 0;
+}
+
+#btn--16:hover {
+  color: #222;
+  z-index: 2;
+}
