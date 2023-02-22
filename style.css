@@ -778,7 +778,7 @@ footer {
   left: 0;
   border-left: 2px solid red;
   border-right: 2px solid #FDC518;
-  transition: all 1s;
+  transition: all .4s;
 }
 
 #btn--17:after {
@@ -790,7 +790,8 @@ footer {
   left: -15px;
   border-top: 2px solid red;
   border-bottom: 2px solid #FDC518;
-  transition: all 1s;
+  transition: all .4s;
+  transition-delay: .4s;
 }
 
 #btn--17:hover:before {
@@ -799,4 +800,50 @@ footer {
 
 #btn--17:hover:after {
   transform: rotateX(180deg);
+}
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@700&display=swap');
+
+#btn--18 {
+  border: none;
+  padding: 12px 40px;
+  background-color: #c47135;
+  color: white;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+#btn--18:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid #c47135;
+  border-left: 2px solid #c47135;
+  transition: all 0.25s;
+}
+
+#btn--18:hover:before,
+#btn--18:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+#btn--18:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 2px solid #c47135;
+  border-right: 2px solid #c47135;
+  transition: all 0.25s;
 }
