@@ -21,6 +21,11 @@ footer {
   font-size: 1rem;
 }
 
+/* All(*) in class */
+.box-sizing {
+  box-sizing: border-box;
+}
+
 /* "body" in class */
 .button-box {
   height: 25vh;
@@ -860,6 +865,7 @@ footer {
 	font-size: 25px;
 	position: relative;
 	transition: all 0.2s;
+  cursor: pointer;
 }
 
 #btn--19:hover {
@@ -915,6 +921,7 @@ footer {
   font-size: 45px;
   letter-spacing: 15px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #btn--20:before {
@@ -990,6 +997,7 @@ footer {
   overflow: hidden;
   transition: all 0.5s;
   z-index: 0;
+  cursor: pointer;
 }
 
 #btn--21:hover {
@@ -1026,4 +1034,55 @@ footer {
 @keyframes wavy {
   0% { background-position-x: 0 }
   100% { background-position-x: 118px; }
+}
+
+#btn--22 {
+  font-family: sans-serif;
+  text-decoration: none;
+  width: 160px;
+  height: 60px;
+  color: black;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+#btn--22 span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 2px solid black;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+.span-22:before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+#btn--22:hover .span-22:before {
+  width: 100%;
+  background-color: black;
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+#btn--22:hover {
+  color: white;
 }
