@@ -754,3 +754,49 @@ footer {
   color: #222;
   z-index: 2;
 }
+
+#btn--17 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: verdana;
+  letter-spacing: 3px;
+  height: 60px;
+  width: 200px;
+  line-height: 60px;
+  text-align: center;
+  color: #FDC518;
+  position: relative;
+}
+
+#btn--17:before {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 200px;
+  top: -15px;
+  left: 0;
+  border-left: 2px solid red;
+  border-right: 2px solid #FDC518;
+  transition: all 1s;
+}
+
+#btn--17:after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 230px;
+  top: 0;
+  left: -15px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid #FDC518;
+  transition: all 1s;
+}
+
+#btn--17:hover:before {
+  transform: rotateY(180deg);
+}
+
+#btn--17:hover:after {
+  transform: rotateX(180deg);
+}
